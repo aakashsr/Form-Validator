@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
 body {
     background-color: #f9f8fb;
     font-family: 'Open Sans', sans-serif;
@@ -58,9 +63,13 @@ h2 {
 }
 
 .form-control.success input {
-    border-color: #2ecc71;
+    border-color: var(--success-color);
 }
 
 .form-control.error input {
-    border-color: #e74c3c;
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
 }
