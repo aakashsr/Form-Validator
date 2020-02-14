@@ -35,13 +35,19 @@ function checkRequired(inputArr) {
   });
 }
 
+function checkPasswordsMatch(password1, password2) {
+  if (password1.value !== password2.value) {
+    showError(password2, "Password do not match");
+  }
+}
+
 function checkLength(input, min, max) {
-  if (input.value < min) {
+  if (input.value.length <= min) {
     showError(
       input,
       `${getFieldName(input)} must be more than ${min} characters`
     );
-  } else if (input.value > max) {
+  } else if (input.value.length >= max) {
     showError(
       input,
       `${getFieldName(input)} must be less than ${max} characters`
@@ -62,4 +68,5 @@ form.addEventListener("submit", function(e) {
   checkLength(username, 3, 15);
   checkLength(password, 6, 25);
   checkEmail(email);
+  checkPasswordsMatch(password, password2);
 });
