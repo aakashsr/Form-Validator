@@ -103,7 +103,7 @@ h2 {
 }
 
 .form-control.active:before {
-    background-color: var(--dot-color);
+    background-color: var(--theme-color);
     border: 2px solid transparent;
 }
 
@@ -229,6 +229,6 @@ button:hover {
     .form-control:before {
         width: 7px;
         height: 7px;
-        top: 55%;
+        top: 50%;
     }
 }
