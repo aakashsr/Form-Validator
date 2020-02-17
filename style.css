@@ -40,6 +40,7 @@ h2 {
     font-weight: 700;
     color: var(--theme-color);
     margin: 0 0 30px;
+    letter-spacing: 1px;
 
 }
 
@@ -198,6 +199,10 @@ button:hover {
         font-size: 25px;
     }
 
+    .container {
+        padding: 20px;
+    }
+
     .form-control input {
         font-size: 12px;
         padding: 10px;
@@ -214,12 +219,12 @@ button:hover {
 
     .form-control {
         margin-bottom: 5px;
-        padding-bottom: 15px;
+        padding-bottom: 25px;
     }
 
     .form-control:before {
         width: 7px;
         height: 7px;
-        top: 60%;
+        top: 55%;
     }
 }
