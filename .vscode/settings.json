@@ -7,6 +7,9 @@
         "statusBar.background": "#fb58ba",
         "statusBarItem.hoverBackground": "#fa26a5",
         "statusBar.foreground": "#15202b",
+        "panel.border": "#fc8acf",
+        "sideBar.border": "#fc8acf",
+        "editorGroup.border": "#fc8acf",
         "tab.activeBorder": "#fc8acf"
     },
     "peacock.color": "#fb58ba"

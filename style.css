@@ -8,10 +8,12 @@
     --success-color: #2ecc71;
     --error-color: #e74c3c;
     --checkmark-color: #43b324;
+    --dot-color: #ff9a9c;
 }
 
 body {
-    background-color: #f9f8fb;
+    /* background-color: #f9f8fb; */
+    background: #fbd3d1;
     font-family: 'Poppins',
         sans-serif;
     display: flex;
@@ -57,12 +59,13 @@ h2 {
 }
 
 .form {
-    padding: 30px 50px;
+    padding: 30px 40px;
 }
 
 .form-control {
     margin-bottom: 10px;
     padding-bottom: 25px;
+    padding-left: 25px;
     position: relative;
 }
 
@@ -81,6 +84,24 @@ h2 {
     width: 100%;
     padding: 10px;
     font-size: 14px;
+}
+
+
+.form-control:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #ff9a9c;
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    transform: translateY(-50%);
+}
+
+.form-control.active:before {
+    background-color: var(--dot-color);
+    border: 2px solid transparent;
 }
 
 .form-control:after {
@@ -126,8 +147,12 @@ h2 {
 }
 
 button {
+    font-family: 'Poppins',
+        sans-serif;
     cursor: pointer;
-    background: #6dabe4;
+    /* background: #6dabe4; */
+    background-color: #ffaeaf;
+    ;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -135,11 +160,13 @@ button {
     font-size: 16px;
     padding: 15px 39px;
     margin-top: 20px;
+    margin-left: 25px;
     transition: all ease .25s;
 }
 
 button:hover {
     background: #4292dc;
+    background: #ff9a9c;
 }
 
 @media screen and (max-width: 960px) {
