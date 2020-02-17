@@ -154,9 +154,8 @@ button {
     font-family: 'Poppins',
         sans-serif;
     cursor: pointer;
-    /* background: #6dabe4; */
+    outline: none;
     background-color: #ffaeaf;
-    ;
     border: none;
     border-radius: 5px;
     color: #fff;
